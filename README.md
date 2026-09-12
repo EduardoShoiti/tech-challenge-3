@@ -142,10 +142,10 @@ O threshold operacional é definido exclusivamente na validação, buscando o ma
 O desempenho no teste é menor que na validação, comportamento compatível com a mudança de período. Esse resultado é reportado de forma transparente: o modelo apresenta capacidade de discriminação moderada e pode apoiar triagem e priorização, não substituir a avaliação pedagógica individual.
 
 #### ROC-AUC:
-![Grafico ROC-AUC](Notebooks\images\curva_roc_Random_Forest_test.png)
+![Grafico ROC-AUC](Notebooks/images/curva_roc_Random_Forest_test.png)
 
 #### SHAP:
-![Grafico SHAP](Notebooks\images\shap_feature_importance_Random_Forest_test.png)
+![Grafico SHAP](Notebooks/images/shap_feature_importance_Random_Forest_test.png)
 
 
 ## Interpretabilidade e insights
