@@ -2,9 +2,9 @@
 
 ## Links de referência
 
-[Vídeo Executivo do Projeto]()
+[Vídeo Executivo do Projeto](https://youtu.be/jeZyzEgxn9c)
 
-[Slides Executivo]()
+[Slides Executivo](https://docs.google.com/presentation/d/1LvTS0rlDDZeTQI_gu8rc2hOUsTo8ZJxllfBieKpVeIA/edit?usp=sharing)
 
 
 ## Contexto e objetivo
