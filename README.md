@@ -41,12 +41,19 @@ O notebook de enriquecimento usa junções `m:1`, evitando multiplicação indev
 ├── data/
 │   ├── ano=2023/ e ano=2024/     # dados da camada Gold
 │   └── sample/                    # amostra e base enriquecida para modelagem
+├── src/
+│   ├── preprocessing/             # preparação de dados reutilizável
+│   ├── modeling/                  # treinamento e seleção de modelos
+│   ├── evaluation/                # métricas e avaliação
+│   └── visualization/             # visualizações de resultados
 ├── Notebooks/
 │   ├── EDA.ipynb
 │   ├── join_external_data.ipynb
-│   └── modelo_alfabetizacao.ipynb
-├── images/                        # artefatos visuais gerados pelos notebooks
+│   ├── modelo_alfabetizacao.ipynb
+│   └── images/                    # artefatos visuais gerados pelos notebooks
+├── reports/                       # relatórios e entregáveis analíticos
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -77,6 +84,14 @@ Execute os notebooks na ordem abaixo a partir da raiz do repositório. Os notebo
 1. `Notebooks/EDA.ipynb` — entendimento da base e geração da amostra estratificada.
 2. `Notebooks/join_external_data.ipynb` — integração de PIB, população e dados de gestores; gera `data_sample_modeling.parquet`.
 3. `Notebooks/modelo_alfabetizacao.ipynb` — treinamento, seleção, avaliação e interpretabilidade.
+
+Como alternativa aos notebooks, o fluxo de treinamento do modelo já selecionado pode ser executado pelo orquestrador:
+
+```bash
+python -m src.pipeline
+```
+
+Por padrão, a execução utiliza a base enriquecida de `data/sample/`, treina o Random Forest com os hiperparâmetros encontrados no notebook e grava métricas, importância por permutação e gráficos em `reports/modeling/`. Use `python -m src.pipeline --help` para as opções disponíveis.
 
 ## Análise exploratória e hipóteses
 
