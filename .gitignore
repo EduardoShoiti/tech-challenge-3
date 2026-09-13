@@ -1,0 +1,43 @@
+# Ambientes virtuais e configurações locais
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs e sistema operacional
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Artefatos locais de modelos e experimentos
+*.pkl
+*.pickle
+*.joblib
+mlruns/
+wandb/
+
+# Arquivos de apoio não pertencentes ao entregável
+[[]IAST[]] - Tech Challenge - Fase 3.pdf
